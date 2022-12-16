@@ -1,0 +1,47 @@
+.containerSobrenos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 0;
+    height: 900px;
+}
+
+.containerSobrenos img {
+    height: 900px;
+}
+ .containerSobrenos1 {
+      display: flex;
+      flex-direction: column;
+      padding-top: 5rem;
+  }
+
+  .listSobrenos {
+      display: grid;
+      grid-template-columns: 30% 60%;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      
+  }
+
+  .titleSobrenos {
+      display: flex;
+      font-family: 'Sensation';
+      font-size: 3rem;
+      font-weight: 100;
+      letter-spacing: 3px;
+      color: #fff;
+      background-color: #6E7376;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      height: 12rem;
+      width: 12rem;
+  }
+
+  .textSobrenos {
+      font-family: 'Open Sans';
+      justify-content: center;
+      padding: 1rem;
+      text-align: justify;
+      letter-spacing: 2px;
+  }

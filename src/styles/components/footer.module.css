@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans';
+    color: #fff;
+    background-color: #40b8dc   ;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px; 
+    gap: 1rem;  
+
+}
+
+.footerIcons {
+    padding: 1rem;
+}
+
+.footer h3 {
+    font-family: 'Open Bold';
+}
+
+.footer p {
+    font-size: 11pt;
+}

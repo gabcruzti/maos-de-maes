@@ -1,0 +1,64 @@
+
+.backgroundImg {
+    padding: 13rem;
+    height: 28rem;
+    margin: 0;
+  }
+
+.containerHome {
+    display: grid;
+    grid-template-columns: 100%;
+    font-family: 'Open Sans';
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+
+.containerHome h3 {
+    font-family: 'Open Extra Bold';
+    font-weight: 900;
+    font-size: 2rem;
+    color: #EE86B7;
+}
+
+.containerHome p {
+    font-family: 'Open Sans';
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #4e5457 ;
+    padding: 1rem;
+     
+}
+
+.iconHome {
+    color: #04b4fc ;
+}
+
+.menuLink {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-decoration: none;    
+    padding: 4rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLink img{
+    border-radius: 8px;
+    width: 700px; 
+       
+}
+
+.containerHome1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.containerHome1 .menuLink {
+    display: flex;
+    flex-direction: column;
+}
