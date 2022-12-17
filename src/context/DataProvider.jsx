@@ -1,27 +1,67 @@
-import { useState, useEffect, createContext} from "react"
-import Data from '../data.js'
+import { useState, useEffect, createContext } from "react";
+import { Carrinho } from "../components/Carrinho.jsx";
+import Data from "../data.js";
 
 export const DataContext = createContext();
 
 export const DataProvider = (props) => {
-    const [produtos, setProdutos] =useState([])
+  const [produtos, setProdutos] = useState([]);
+  const [menu, setMenu] = useState(false);
+  const [carrinho, setCarrinho] = useState([]);
+  const [total, setTotal] = useState(0);
 
-    useEffect(() => {
-        const produto = Data.items
-        if (produto) {
-            setProdutos(produto)
-        }else {
-            setProdutos(produto)
-        }
-    },[])
-
-    const value = {
-        produtos : [produtos]
+  useEffect(() => {
+    const produto = Data.items;
+    if (produto) {
+      setProdutos(produto);
+    } else {
+      setProdutos(produto);
     }
-    return (
-        <DataContext.Provider value = {value}>
-            {props.children}
-        </DataContext.Provider>
-    )
-}
+  }, []);
 
+  const addCarrinho = (id) => {
+    const check = carrinho.every((item) => {
+      return item.id !== id;
+    });
+    if (check) {
+      const data = produtos.filter((produto) => {
+        return produto.id === id;
+      });
+      setCarrinho([...carrinho, ...data]);
+    } else {
+      alert("Esse produto já foi adicionado");
+    }
+  };
+
+  useEffect(() => {
+    const dataCarrinho = JSON.parse(localStorage.getItem("dataCarrinho"));
+    if (dataCarrinho) {
+      setCarrinho(dataCarrinho);
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("dataCarrinho", JSON.stringify(carrinho));
+  }, [Carrinho]);
+
+  useEffect(() => {
+    const getTotal = () => {
+      const res = carrinho.reduce((prev, item) => {
+        return prev + item.price * item.cantidad;
+      }, 0);
+      setTotal(res);
+    };
+    getTotal();
+  }, [carrinho]);
+
+  const value = {
+    produtos: [produtos],
+    menu: [menu, setMenu],
+    addCarrinho: addCarrinho,
+    carrinho: [carrinho, setCarrinho],
+    total: [total, setTotal],
+  };
+  return (
+    <DataContext.Provider value={value}>{props.children}</DataContext.Provider>
+  );
+};

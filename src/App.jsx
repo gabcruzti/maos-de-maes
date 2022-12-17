@@ -1,12 +1,12 @@
-import { Router } from "./Router"
-import 'boxicons'
+import { Router } from "./Router";
+import "boxicons";
 
 function App() {
   return (
     <div className="App">
-      <Router/>
+      <Router />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

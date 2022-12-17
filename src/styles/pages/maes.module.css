@@ -25,9 +25,8 @@
     font-family: 'Sensation';
     font-size: 40pt;
     letter-spacing: 3px;
-    color: #6E7376 ;
+    color: #4A8DAC;
     font-weight: 300;
-    
 }
 
 .cardMaesTexto p {
@@ -38,5 +37,28 @@
     padding-right: 2rem;
     padding-bottom: 2rem;
     color: #4b6b9a;
-    
+}
+
+@media (max-width: 600px) {
+    .containerMaes {
+        padding: 3rem;
+        padding-top: 8.5rem;
+        gap: 2rem;
+    }
+
+    .cardMaes img {
+        width: 180px;
+    }
+
+    .cardMaesTexto h1 {
+        font-size: 30pt;
+        padding-left: 1.8rem;
+    }
+
+    .cardMaesTexto p {
+        font-size: 6pt;
+        letter-spacing: .5px;
+        padding-left: 1.8rem;
+    }
+
 }

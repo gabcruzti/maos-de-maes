@@ -3,13 +3,12 @@
     flex-direction: row;
     font-family: 'Open Sans';
     color: #fff;
-    background-color: #40b8dc   ;
+    background-color: #40b8dc;
     height: 70px;
     justify-content: center;
     align-items: center;
-    letter-spacing: 2px; 
-    gap: 1rem;  
-
+    letter-spacing: 2px;
+    gap: 1rem;
 }
 
 .footerIcons {
@@ -22,4 +21,33 @@
 
 .footer p {
     font-size: 11pt;
+}
+
+@media (max-width: 600px) {
+    .footer {
+        /* display: flex;
+        flex-direction: row;
+        font-family: 'Open Sans';
+        color: #fff;
+        background-color: #40b8dc;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2px;
+        gap: 1rem; */
+        text-align: center;
+        padding: .8rem;
+    }
+    
+    .footerIcons {
+        padding: 1rem;
+    }
+    
+    .footer h3 {
+        width: 18rem;
+    }
+    
+    .footer p {
+        font-size: 10pt;
+    }
 }

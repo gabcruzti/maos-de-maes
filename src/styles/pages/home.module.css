@@ -1,9 +1,8 @@
-
 .backgroundImg {
     padding: 13rem;
     height: 28rem;
     margin: 0;
-  }
+}
 
 .containerHome {
     display: grid;
@@ -14,7 +13,6 @@
     align-items: center;
     padding-top: 0;
 }
-
 
 .containerHome h3 {
     font-family: 'Open Extra Bold';
@@ -27,38 +25,70 @@
     font-family: 'Open Sans';
     font-weight: 100;
     font-size: 1.1rem;
-    color: #4e5457 ;
+    color: #4e5457;
     padding: 1rem;
-     
 }
 
 .iconHome {
-    color: #04b4fc ;
+    color: #04b4fc;
 }
 
 .menuLink {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    text-decoration: none;    
+    text-decoration: none;
     padding: 4rem;
     text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.menuLink img{
+.menuLink img {
     border-radius: 8px;
-    width: 700px; 
-       
+    width: 700px;
 }
 
 .containerHome1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 
 .containerHome1 .menuLink {
     display: flex;
     flex-direction: column;
+}
+
+
+@media (max-width: 700px) {
+
+    .containerHome {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .menuLink img {
+        width: 500px;
+    }
+  
+        
+    .menuLink {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;   
+    }
+    
+    .containerHome1 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .containerHome1 .menuLink {
+        display: flex;
+        flex-direction: column  ;
+    }
+
+    .containerHome1 .menuLink div {
+        padding-right: 1rem;
+    } 
 }
