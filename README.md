@@ -6,8 +6,20 @@
 Mãos de mães é um projeto inspirado em todas as mulheres artesãs, mas principalmente nas que são mães.
 Queremos ajudá-las e às suas famílias, dando a conhecer as obras de arte que nascem das suas maravilhosas mãos.
 
-## Acesso ao projeto:
-https://maos-de-maes.vercel.app/
+## Páginas:
+
+* Home
+* Produtos
+* Sobre nós
+* Contato
+
+## Implementações futuras:
+
+* Carrinho de compras para adicionar, subtrair e deletar produtos.
+* Visão detalhada de cada produto e close-up da imagem.
+* Link que te leva até a história de cada mãe criadora do produto.
+* Botão para que as pessoas que desejarem possam fazer doações diretas para a iniciativa.
+
 
 ## Tecnologia usada:
 
@@ -15,3 +27,7 @@ https://maos-de-maes.vercel.app/
 * CSS
 * JavaScript
 * ReactJS
+
+## Acesso ao projeto:
+
+https://maos-de-maes.vercel.app/
