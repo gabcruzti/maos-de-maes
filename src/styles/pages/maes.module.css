@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+
 .containerMaes {
     display: flex;
     flex-direction: column;
@@ -22,7 +24,7 @@
 }
 
 .cardMaesTexto h1 {
-    font-family: 'Sensation';
+    font-family: 'Corinthia', cursive;
     font-size: 40pt;
     letter-spacing: 3px;
     color: #4A8DAC;
