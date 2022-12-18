@@ -9,7 +9,7 @@ Mãos de mães é um projeto inspirado em todas as mulheres artesãs, mas princi
 Queremos ajudá-las e às suas famílias, dando a conhecer as obras de arte que nascem das suas maravilhosas mãos.
 
 ## Acesso ao projeto:
-https://maos-de-maes.vercel.app/contato
+https://maos-de-maes.vercel.app/
 
 ## Tecnologia usada:
 
